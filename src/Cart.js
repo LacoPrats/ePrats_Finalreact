@@ -14,7 +14,9 @@ const Cart = () => {
 
   
 
-const createOrder=()=>{
+const createOrder=async(e)=>{
+  e.preventDefault();
+  setOrder(true)
   console.log("click");
   const order={
     buyer:{
@@ -24,7 +26,8 @@ const createOrder=()=>{
     },
 item:CartList,
 date:serverTimestamp(),
-    }
+total:CartList.reduce((acc,i)=>(acc=(i.item.price * i.cantidad)),0)
+}
     const ordenesCollection= collection(db,"ordenes")
     const pedido= addDoc(ordenesCollection,order)
 
