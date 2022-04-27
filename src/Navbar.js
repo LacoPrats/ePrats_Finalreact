@@ -14,6 +14,7 @@ function Navbar(){
 
            <Link className="navlink" style={{margin:"10px"}}to="/cart">Cart</Link>
            
+           <Link className="navlink" style={{margin:"10px"}}to="/categoria/1">Jordan</Link>
         </ul>
     </nav>
     );
