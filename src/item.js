@@ -12,7 +12,7 @@ function Item({product}){
         <p className="precio">Precio: {product.price}</p>
         <Link to={`/item/${id}`}><button>Ver Detalles</button></Link>
         
-        <h4>Stock Disponible {stock}</h4>
+        <h4>Available Stock {stock}</h4>
         </div>
     )
 }

@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -47,6 +48,8 @@
 .header{
   text-align: center;
   font-size: large;
+  padding: 0%;
+  
 }
 .Item{
   background: linear-gradient(rgb(204, 204, 204),rgb(238, 238, 238));
