@@ -78,9 +78,6 @@ total:CartList.reduce((acc,i)=>(acc=(i.item.price * i.cantidad)),0)
               <button onClick={createOrder}>
                 Checkout</button>
             {/* {order && <p> Order:{order}</p>} */}
-          
-
-
             </div>
           )}
         </div>
